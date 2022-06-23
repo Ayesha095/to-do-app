@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins'sans-serif;
+  }
+  body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #4ca1af 2%, #c4e0e5 100%)
+  
+  }
+  .wrapper{
+    margin: 120px auto;
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+  }
+
+  .wrapper header{
+  
+    font-size: 30px;
+    font-weight: 600;
+    
+  }
+  .wrapper .inputField{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  
+  
+  .inputField input{
+    outline: none;
+    width: 85%;
+    height: 100%;
+    border:1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding: 15px;
+   
+    
+  }
+  .inputField button{
+    position: relative;
+    width: 60px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: #261253;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.9;
+    pointer-events: none;
+    transition-duration: 0.4s;
+
+    
+  }
+
+  .inputField  button:hover  {
+    right: 0;
+    
+  }
+  .inputField button.active{
+    opacity: 0;
+    pointer-events: none;
+    
+  }
+  .wrapper .todolist{
+    max-height: 250px;
+    overflow-y: auto;
+    
+    
+    
+  }
+  .todolist li{
+    list-style: none;
+    height: 40px;
+    line-height: 45px;
+    position:relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+.todolist li span{
+  position: absolute;
+  right: -45px;
+  color: #fff;
+  width: 45px;
+  text-align: center;
+  background: #e74c3c;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  
+ 
+ 
+}
+.todolist li:hover span {
+  right: 0;
+  
+}
+.wrapper footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: space space-between;
+  }
+  .footer button{
+    border:  none;
+    outline: none;
+    background: #381269;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+    opacity: 0.6;
+    pointer-events: none;
+    
+   
+  }
+  .footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+    
+  }
